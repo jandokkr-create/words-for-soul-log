@@ -2,6 +2,16 @@
 
 記録形式: `## YYYY-MM-DD` の見出しの下に、担当・内容を簡潔に記載する。新しい日付を上に追加していく。
 
+## 2026-09-06 追記7(見出し画像サイズの確認、Browser Claudeによる実施)
+- 担当: Browser Claude(確認のみ、設定変更なし)
+- ［確認完了］5記事すべてで、アイキャッチ画像とArticle構造化データ(JSON-LD)の`"image"`が指す画像は完全に同一ファイルであり、Cocoon側で別サイズの生成版を構造化データに使っている様子はなかった。実測サイズ(naturalWidth/naturalHeight)も構造化データの宣言値と一致していた。
+  - 投稿15: `hokusai-great-wave-met-public-domain.webp`、1600×1076px
+  - 投稿41: `hokusai-red-fuji-met-public-domain.webp`、1600×1096px
+  - 投稿44: `tenkachaya-fuji-lake-kawaguchi-alpsdake-cc-by-sa-4.webp`、1600×1067px
+  - 投稿46: `katsunuma-koshu-vineyard-asturio-cantabrio-cc-by-sa-4.webp`、1600×1064px
+  - 投稿48: `lake-kawaguchi-mount-fuji-subramaniam-kv-cc-by-3.webp`、1600×1067px
+- ［結論］5記事とも、Googleのリッチリザルト推奨基準(1200×630px以上)を余裕を持って満たしており、追加対応は不要。これにより`seo_strategy_2026.md`の「優先度の高い施策」4項目(meta description個別設定、Article構造化データ、パンくずリスト構造化データ、見出し画像サイズ)はすべて確認・対応が完了した。
+
 ## 2026-09-06 追記6(サイトアイコンの設定、Browser Claudeによる実施)
 - 担当: Browser Claude(サイトアイコン設定のみ。本文・タイトル・meta description・カテゴリー・タグなど他の項目は変更なし)
 - ［経緯］Ando様が用意した新しいロゴ画像(羽根ペン+開いた本、白背景、正方形1254×1254px)を、Claude(Cowork)経由で受け取り、WordPressの「設定」→「一般設定」の「サイトアイコン」欄から設定した。
