@@ -2,6 +2,13 @@
 
 記録形式: `## YYYY-MM-DD` の見出しの下に、担当・内容を簡潔に記載する。新しい日付を上に追加していく。
 
+## 2026-09-06 追記6(サイトアイコンの設定、Browser Claudeによる実施)
+- 担当: Browser Claude(サイトアイコン設定のみ。本文・タイトル・meta description・カテゴリー・タグなど他の項目は変更なし)
+- ［経緯］Ando様が用意した新しいロゴ画像(羽根ペン+開いた本、白背景、正方形1254×1254px)を、Claude(Cowork)経由で受け取り、WordPressの「設定」→「一般設定」の「サイトアイコン」欄から設定した。
+- ［発見・想定と異なっていた点］作業前の確認で、サイトアイコンは既に別デザイン(紺色の正方形背景に白い羽根ペンのシルエットのみ、本のモチーフなし)で設定済みだったことが判明した。メディアライブラリにも「words-for-soul-site-icon」「words-for-soul-site-icon-final」「cropped-words-for-soul-site-icon-...」等の画像が存在しており、以前に何らかの形でサイトアイコンの設定作業が行われていたと見られる。指示通り、今回の新しいロゴに置き換えた。
+- ［設定内容・完了］新しい画像をトリミングなしでそのままサイトアイコンとして保存。ページのソースで`<head>`内の`<link rel="icon">`タグ(32×32、192×192)が新しい画像(`cropped-image-32x32.png`、`cropped-image-192x192.png`)を指していることを確認。該当画像ファイルを実際に開いて目視した結果も、指定したロゴ(白背景・紺色の羽根ペンと本)と完全に一致していた。
+- ［結論］サイトアイコンは新しいロゴ(羽根ペン+開いた本)に更新され、反映を確認した。
+
 ## 2026-09-06 追記5(Article構造化データ・パンくずリスト構造化データの確認、Browser Claudeによる実施)
 - 担当: Browser Claude(確認のみ、設定変更なし)
 - ［Article構造化データ・確認完了］5記事すべてで`application/ld+json`のscriptタグが1件ずつ出力されており、`@type: Article`。入れ子で`mainEntityOfPage`(WebPage)、`image`(ImageObject)、`author`(Person、name「響」)、`publisher`(Organization、ロゴもImageObject)を含む。5件とも著者名・公開日・更新日・画像に欠落なし。
