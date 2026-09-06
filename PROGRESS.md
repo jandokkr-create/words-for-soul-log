@@ -2,6 +2,12 @@
 
 記録形式: `## YYYY-MM-DD` の見出しの下に、担当・内容を簡潔に記載する。新しい日付を上に追加していく。
 
+## 2026-09-06 追記8(検索インデックス反映状況の再確認、Browser Claudeによる実施)
+- 担当: Browser Claude(確認のみ、設定変更なし)
+- ［背景］以前`site:words-for-soul.com`検索で、koshu-wine-yamanashi-beginners-guideとhokusai-mount-fuji-koshu-wine-journeyの2記事だけがヒットしない状態が続いていた(Search Console上は両記事とも「インデックス登録済み」)。
+- ［再確認・解消を確認］時間を置いて実ブラウザで再確認したところ、`site:words-for-soul.com`(単独クエリ)で6件(トップページ+5記事)すべてが表示され、上記2記事についても個別の`site:`検索(記事スラッグ指定)でそれぞれ1件ずつヒットするようになった。0件だった状態は解消。
+- ［結論］トップページ+5記事すべてがGoogle検索結果(site:検索)上でも確認できる状態になり、インデックス反映に関する懸念は解消した。
+
 ## 2026-09-06 追記7(見出し画像サイズの確認、Browser Claudeによる実施)
 - 担当: Browser Claude(確認のみ、設定変更なし)
 - ［確認完了］5記事すべてで、アイキャッチ画像とArticle構造化データ(JSON-LD)の`"image"`が指す画像は完全に同一ファイルであり、Cocoon側で別サイズの生成版を構造化データに使っている様子はなかった。実測サイズ(naturalWidth/naturalHeight)も構造化データの宣言値と一致していた。
