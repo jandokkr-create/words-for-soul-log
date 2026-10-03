@@ -2,6 +2,14 @@
 
 記録形式: `## YYYY-MM-DD` の見出しの下に、担当・内容を簡潔に記載する。新しい日付を上に追加していく。
 
+## 2026-10-03
+
+- ［確認完了］ValueCommerceのサイト審査(words-for-soul.com、サイトID 3782567)が承認済みと判明。Yahoo!トラベルは提携済み
+- ［完了］投稿15のYahoo!トラベル通常リンク3件(富士ビューホテル・うぶや・富士レークホテル)を、ValueCommerceのMyLinkに差し替え。relはnofollow sponsored noopener、target="_blank"も維持
+- ［独立検証・完了］Browser Claude(コードエディタ・公開ページ)とChatGPT(公開ページのDOM抽出)の2経路が一致。MyLink3件、通常リンクの残り0件、公開ステータスはpublish
+- ［留保点］ValueCommerce側のクリック・成果の計測は、レポート反映を待たないと未確認
+- ［現状］投稿15の未収益化リンクは残り7件(楽天トラベル3・Amazon2・楽天ブックス2)。投稿44の3件と合わせ、全体で10件
+
 ## 2026-09-17 追記2(3本目確定)
 
 - ［完了］3本目「山寺・立石寺 ─ 芭蕉が『閑さや』を詠んだ日」が、Claude・Gemini・ChatGPTの
